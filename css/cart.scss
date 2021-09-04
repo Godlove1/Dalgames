@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+h3{
+	font-size: 4em;
+margin: 20px 0;
+}
+main{
+	margin: 10px  0 60px  0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+table{
+	//border: 1px solid  black;
+	cursor: pointer;
+}
+
+th,td{
+	width: auto;
+text-align: center;
+padding: 10px 5px;
+border: 2px solid teal;
+}
+.ame{
+	text-transform: capitalize;
+}
+th{
+	background: teal;
+	color: white;
+}
+.danger{
+	text-decoration: none;
+	color: red;
+}
+#amt{
+	color: gold;
+	font-size: 1.3em;
+}
+
+input{
+	margin: 50px 0;
+	background: teal;
+	padding: 20px 30px;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.3em;
+	transition: border .3s ease-in-out,color .3s ease-in-out;
+
+	&:hover{
+		border: none;
+		color: green;
+	}
+}
+
+u{
+	background: orange;
+	color: white;
+	border-radius: 10px;
+	padding: 0 5px;
+}
+
+
+		.notice{
+				border: 2px solid grey;
+				border-radius: 10px;
+				padding: 5px;
+				cursor: pointer;
+				text-transform: capitalize;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 10px 5px;
+				animation: flick .5s infinite;
+.red{
+	color: green;
+	font-weight: bolder;
+}
+			@keyframes flick {
+				0%{
+					border: 2px solid grey;
+				}
+				50%{
+						border: 2px solid green;
+				}
+				100%{
+					border: 2px solid teal;
+				}
+			}
+			}

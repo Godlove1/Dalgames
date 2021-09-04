@@ -1,0 +1,864 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --prm:teal;
+  --color:white;
+  --bg:rgba(14, 12, 12, 0.849);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-header {
+  background: var(--bg);
+  color: var(--color);
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-header .left {
+  display: none;
+  width: 100%;
+}
+
+.top-header .right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.top-header .currency, .top-header .language {
+  margin: 0 10px;
+  position: relative;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+  cursor: pointer;
+}
+
+.top-header .currency .dropdown, .top-header .language .dropdown {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  background: var(--color);
+  color: black;
+}
+
+.top-header .currency .dropdown p, .top-header .language .dropdown p {
+  padding: 10px;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+.top-header .currency .dropdown p:hover, .top-header .language .dropdown p:hover {
+  color: var(--prm);
+}
+
+.top-header .currency .dropdown p:nth-child(1), .top-header .language .dropdown p:nth-child(1) {
+  border-bottom: 1px solid silver;
+}
+
+.top-header .currency:hover > .dropdown, .top-header .language:hover > .dropdown {
+  display: block;
+}
+
+.top-header .currency:hover, .top-header .language:hover {
+  color: var(--prm);
+}
+
+.top-header .discount {
+  cursor: pointer;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+  margin-right: 10px;
+  width: 240px;
+  text-align: center;
+}
+
+.top-header .discount:hover {
+  color: var(--prm);
+}
+
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bg);
+  color: var(--prm);
+}
+
+.menu .title {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--bg);
+  color: var(--color);
+  padding: 20px;
+}
+
+.hero .hero-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2;
+}
+
+.hero .hero-info h1 {
+  font-size: 2.5em;
+}
+
+.hero .hero-info h2 {
+  color: var(--prm);
+  text-align: left;
+}
+
+.hero .hero-info p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.hero .hero-info button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  -webkit-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
+  -webkit-box-shadow: 1px 1px 5px var(--prm);
+          box-shadow: 1px 1px 5px var(--prm);
+}
+
+.hero .hero-info button:hover {
+  background: var(--prm);
+}
+
+.hero .hero-info button a {
+  text-decoration: none;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+.hero .hero-info button a:hover {
+  color: var(--color);
+}
+
+.hero .hero-image {
+  display: none;
+  width: 100%;
+}
+
+.banners {
+  width: 100%;
+  height: auto;
+  margin: 30px 0 20px 0;
+}
+
+.banners .banner {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0;
+  position: relative;
+  color: var(--color);
+  -webkit-box-shadow: 1px 1px 10px grey;
+          box-shadow: 1px 1px 10px grey;
+}
+
+.banners .banner h2 {
+  position: absolute;
+  right: 5px;
+  width: 300px;
+  top: 40%;
+}
+
+.banners .banner .banner-keyword {
+  color: var(--prm);
+}
+
+.banners .banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+}
+
+.banners .b2 h2 {
+  left: 5px;
+}
+
+.products-navbar {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-navbar .active {
+  border-bottom: 5px solid var(--prm);
+  padding-bottom: 8px;
+}
+
+.products-navbar h2 {
+  width: 50%;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.products-navbar .sub-product-navbar {
+  width: 100%;
+}
+
+.products-navbar .sub-product-navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.products-navbar .sub-product-navbar ul .active {
+  border-bottom: 5px solid var(--prm);
+  color: white;
+  background: var(--prm);
+  padding: 8px;
+}
+
+.products-navbar .sub-product-navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.6em;
+  margin-left: 5px;
+}
+
+/* here weare using the same styles and over writting separately */
+.products, .featured-games, .top-rated-games {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.products .product, .featured-games .product, .top-rated-games .product {
+  width: 170px;
+  height: auto;
+  -webkit-box-shadow: 5px 5px 10px silver;
+          box-shadow: 5px 5px 10px silver;
+}
+
+.products .product .image-card, .featured-games .product .image-card, .top-rated-games .product .image-card {
+  width: 100%;
+  overflow: hidden;
+}
+
+.products .product .image-card img, .featured-games .product .image-card img, .top-rated-games .product .image-card img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.products .product .image-card img:hover, .featured-games .product .image-card img:hover, .top-rated-games .product .image-card img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.products .product .details .game-name, .featured-games .product .details .game-name, .top-rated-games .product .details .game-name {
+  width: 100%;
+  padding: 10px;
+  color: var(--color);
+  text-transform: capitalize;
+  font-size: 1.2em;
+  background: var(--bg);
+}
+
+.products .product .details .price, .featured-games .product .details .price, .top-rated-games .product .details .price {
+  text-align: center;
+  background: var(--prm);
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.products .product .details .console, .featured-games .product .details .console, .top-rated-games .product .details .console {
+  font-weight: bold;
+  padding: 5px 0;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.products .product .cart-button, .featured-games .product .cart-button, .top-rated-games .product .cart-button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: var(--prm);
+  color: var(--color);
+  padding: 10px 0;
+}
+
+.products .product .cart-button .tocart, .featured-games .product .cart-button .tocart, .top-rated-games .product .cart-button .tocart {
+  padding: 5px;
+  border: 1px solid var(--color);
+  text-transform: capitalize;
+  -webkit-transition: color .2s ease-in-out,background .2s ease-in-out;
+  transition: color .2s ease-in-out,background .2s ease-in-out;
+}
+
+.products .product .cart-button .tocart:hover, .featured-games .product .cart-button .tocart:hover, .top-rated-games .product .cart-button .tocart:hover {
+  background: var(--bg);
+  color: var(--prm);
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.products .product {
+  margin: 8px 0;
+}
+
+.top-rated-games .product, .featured-games .product {
+  border-radius: 10px;
+  -webkit-box-shadow: -2px -2px 4px black;
+          box-shadow: -2px -2px 4px black;
+  margin: 20px 1px;
+}
+
+.top-rated-games .product .image-card img, .featured-games .product .image-card img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  border-radius: 10px;
+}
+
+.top-rated-games .product .image-card img:hover, .featured-games .product .image-card img:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.top-rated-games .product .details .console, .featured-games .product .details .console {
+  text-align: center;
+  color: var(--color);
+  background: #242323;
+}
+
+.top-rated-games .product .details .price, .featured-games .product .details .price {
+  text-align: center;
+  background: var(--color);
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.top-rated-games .product .cart-button, .featured-games .product .cart-button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: var(--prm);
+  color: var(--color);
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.top-rated-games .product .cart-button .tocart, .featured-games .product .cart-button .tocart {
+  font-size: 1.3em;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.featured-games .product .cart-button .tocart {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.featured-games .product .cart-button img {
+  display: none;
+}
+
+.top-rated-games .product {
+  width: 100%;
+  height: 215px;
+  margin: 30px 0;
+  border: 2px solid red;
+}
+
+.top-rated-games .product .tester {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-rated-games .product .tester .image-card {
+  width: 100%;
+  height: 210px;
+}
+
+.top-rated-games .product .tester .image-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-rated-games .product .tester .wrapper {
+  width: 100%;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-rated-games .product .tester .wrapper .details {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.top-rated-games .product .tester .wrapper .details .console {
+  text-align: right;
+  color: var(--color);
+  background: #242323;
+  font-size: 1.3em;
+  padding-right: 10px;
+  text-transform: capitalize;
+}
+
+.top-rated-games .product .tester .wrapper .details .price {
+  text-align: center;
+  background: var(--prm);
+  color: var(--color);
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+.top-rated-games .product .tester .wrapper .rating {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.top-rated-games .product .tester .wrapper .rating img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.top-rated-games .product .tester .wrapper .cart-button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: var(--prm);
+  color: var(--color);
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.top-rated-games .product .tester .wrapper .cart-button .tocart {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 20px 0 20px 0;
+}
+
+.top-rated-games .product .tester .wrapper .cart-button img {
+  width: block;
+}
+
+/*floating cart*/
+.float-cart {
+  z-index: 2;
+}
+
+.float-cart .shopping-cart {
+  position: fixed;
+  top: 5%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.616);
+}
+
+.float-cart .shopping-cart a img {
+  width: 40px;
+}
+
+.float-cart .shopping-cart #count {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  background: var(--prm);
+  border-radius: 50%;
+  color: var(--color);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--bg);
+  color: var(--color);
+  font-size: 1.2em;
+}
+
+footer .contact {
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1em;
+}
+
+footer .contact .phone {
+  width: 100%;
+}
+
+footer .contact .social-media {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact .social-media p {
+  width: 100%;
+  margin: 10px 0;
+}
+
+footer .contact .social-media ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+footer .contact .social-media ul li a img {
+  width: 35px;
+}
+
+footer .credit {
+  padding: 20px 0;
+  font-size: 1em;
+}
+
+footer .credit .end-credit {
+  color: var(--prm);
+}
+
+footer .pay-pics {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .pay-pics img {
+  margin: 8px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+/*MEDIA QUERY*/
+@media (min-width: 800px) {
+  .top-header .right {
+    width: 100%;
+  }
+  .top-header .right .currency, .top-header .right .language {
+    width: 100%;
+  }
+  .top-header .left {
+    display: block;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top-header .discount {
+    cursor: pointer;
+    -webkit-transition: color .4s ease-in-out;
+    transition: color .4s ease-in-out;
+    margin-right: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .top-header .discount:hover {
+    color: var(--prm);
+  }
+  .hero {
+    padding-bottom: 50px;
+    height: auto;
+  }
+  .hero .hero-info {
+    padding-left: 100px;
+  }
+  .hero .hero-info h1 {
+    font-size: 3.5em;
+  }
+  .hero .hero-image {
+    display: block;
+    width: 100%;
+  }
+  .banners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .banners .banner {
+    width: 440px;
+    height: 400px;
+  }
+  .products-navbar {
+    border-bottom: 1px solid silver;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .products-navbar h2 {
+    width: 50%;
+    font-size: 1.5em;
+  }
+  .products-navbar .sub-product-navbar ul .active {
+    border-radius: 10px;
+  }
+  .products-navbar .sub-product-navbar ul li a {
+    font-size: 1.5em;
+  }
+  .products .product, .featured-games .product, .top-rated-games .product {
+    width: 320px;
+  }
+  .products .product .details .game-name, .products .product .details .console, .featured-games .product .details .game-name, .featured-games .product .details .console, .top-rated-games .product .details .game-name, .top-rated-games .product .details .console {
+    font-size: 1.5em;
+  }
+  .products .product .details .price, .featured-games .product .details .price, .top-rated-games .product .details .price {
+    font-size: 1.5em;
+  }
+  .products .product .cart-button .addedtocart, .featured-games .product .cart-button .addedtocart, .top-rated-games .product .cart-button .addedtocart {
+    width: 200px;
+    text-align: center;
+    border: 5px solid var(--color);
+  }
+  .h2 {
+    padding: 20px 0;
+    font-size: 2em;
+    border: 2px solid silver;
+  }
+  .top-rated-games {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .top-rated-games .product {
+    width: 600px;
+    height: auto;
+  }
+  .top-rated-games .product .details .console {
+    font-size: 1em;
+  }
+  .top-rated-games .product .details .rating {
+    margin: 15px 10px;
+  }
+  .top-rated-games .product .details .rating img {
+    margin-right: 15px;
+    width: 35px;
+  }
+  .top-rated-games .product .details .rating p {
+    font-size: 1.5em;
+  }
+  .top-rated-games .product .cart-button .addedtocart {
+    border: 3px solid var(--color);
+    border-radius: 20px 0 20px;
+    background: var(--color);
+    color: var(--prm);
+  }
+  .top-rated-games .product .cart-button .addedtocart:hover {
+    background: var(--prm);
+    color: var(--color);
+    border: 3px solid var(--prm);
+  }
+  .top-rated-games .product .cart-button img {
+    width: 35px;
+  }
+}

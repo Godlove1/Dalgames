@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	 box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+:root{
+	--bg:rgb(34, 32, 32);
+	--clr:white;
+	--prm:gold;
+}
+
+
+header{
+	width: 100%;
+	height: 100px;
+	background: var(--bg);
+	display: flex;
+	padding: 0 40px;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+h2{
+	color: var(--prm);
+}
+
+
+.loginfo{
+	text-align: center;
+	color: var(--clr);
+	line-height: 2;
+}
+
+.sidenav-wrapper{
+	width: 30vw;
+height: 100%;
+	background: var(--bg);
+}
+.sidenav{
+	height: 100%;
+	display: flex;
+		flex-direction: column;
+	align-items: center;
+}
+.sidenav h3{
+	color: var(--prm);
+	border: 2px solid var(--clr);
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+.tab{
+	margin: 20px 0;
+}
+.tab a{
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.tab .white{
+color: var(--clr);
+transition: color .3s ease-in-out;
+}
+.white:hover{
+	color: var(--prm);
+}
+.tab .gold{
+	color: var(--prm);
+	transition: color .3s ease-in-out;
+}
+.gold:hover{
+	color: var(--clr);
+}
+
+
+form{
+	display: flex;
+}
+
+.ball a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	padding:5px;
+	border: 2px solid gold;
+	
+}
+
+@media(min-width:992px){
+	.sidenav-wrapper{
+		width: 25vw;
+		height: 100%;
+	}
+	.tab a{
+		font-size: 1.3em;
+	}
+}
