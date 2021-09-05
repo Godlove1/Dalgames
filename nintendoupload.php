@@ -27,9 +27,6 @@
 			<label for="price">Price of Game :</label>
 			<input type="text" name="price" class="field" required><br>
 			<!--/price-->
-			<!--PRODUCT DEXSCRIPTION--
-			<label for="description">Add Description:</label>
-			<input type="text" name="description" class="field" required><br>
 			/PRODUCT DESCRIPTION-->
 			<!--Console-->
 			<label for="console">Console : </label>
@@ -52,16 +49,4 @@
 include 'dbconn.php';
 include 'nintendoscript.php';
 ?>
-
-<?php
-$records = mysqli_query($conn, "select * from nintendo");
-while ($data = mysqli_fetch_array($records)) {
-?>
-<div class="uploaded-img" style="width: 200px; height: 300px;">
-	<img src="<?php echo $data['images']; ?>" loading="lazy" width=" 100%" height="100%">
-	<?php echo $data['filename']; ?>
-	<?php echo $data['console']; ?>
-	<?php echo $data['price']; ?>
-</div>
-<?php } ?>
 <?php mysqli_close($conn); ?>

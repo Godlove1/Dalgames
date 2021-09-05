@@ -14,7 +14,7 @@
 	<header>
 		<h2>Dalgames <sup>&reg;</sup></h2>
 		<div class="ball">
-			<a href="index.php">Back To Site</a>
+			<a href="index.php">To Site</a>
 		</div>
 	</header>
 
@@ -23,35 +23,31 @@
 			<h3>Admin Actions</h3>
 
 			<div class="tab">
-				<a href="newproductupload.php" class="white">Edit New Products</a>
+				<a href="newproductupload.php" class="white">Add New Products</a>
 			</div>
 
 			<div class="tab">
-				<a href="playstationupload.php" class="gold">Edit Playstation </a>
+				<a href="playstationupload.php" class="gold">Add Playstation </a>
 			</div>
 
 			<div class="tab">
-				<a href="topratedupload.php" class="white">Edit Top Rated </a>
+				<a href="topratedupload.php" class="white">Add Top Rated </a>
 			</div>
 
 			<div class="tab">
-				<a href="nintendoupload.php" class="gold">Edit Nintendo</a>
+				<a href="nintendoupload.php" class="gold">Add Nintendo</a>
 			</div>
 
 			<div class="tab">
-				<a href="consoleupload.php" class="white">Edit Consoles page</a>
+				<a href="consoleupload.php" class="white">Add Consoles </a>
 			</div>
 
 			<div class="tab">
-				<a href="featgamesupload.php" class="gold">Edit Featured Games</a>
+				<a href="featgamesupload.php" class="gold">Add Featured Games</a>
 			</div>
 
 			<div class="tab">
-				<a href="xboxupload.php" class="white">Edit Xbox</a>
-			</div>
-
-			<div class="tab">
-				<a href="ordersmade.php" class="gold">Orders/checkouts</a>
+				<a href="xboxupload.php" class="white">Add Xbox</a>
 			</div>
 
 		</div>

@@ -3,7 +3,7 @@ session_start();
 $server='localhost';
 $user="root";
 $password="";
-$dbname="albiogames";
+$dbname="dalgames";
 $conn=mysqli_connect($server,$user,$password,$dbname) or die("error connecting  to database ");
 
 

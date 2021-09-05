@@ -14,7 +14,7 @@ if(isset($_POST["submit"])){
 
 	if($check){
 		echo "<script>
-		alert('data succesfully uploaded');
+		alert('product succesfully uploaded');
 		</script>";
 	}else{
 		echo "<script>

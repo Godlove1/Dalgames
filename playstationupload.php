@@ -52,16 +52,4 @@
 include 'dbconn.php';
 include 'playstationscript.php';
 ?>
-
-<?php
-$records = mysqli_query($conn, "select * from playstation");
-while ($data = mysqli_fetch_array($records)) {
-?>
-<div class="uploaded-img" style="width: 200px; height: 300px;">
-	<img src="<?php echo $data['images']; ?>" loading="lazy" width=" 100%" height="100%">
-	<?php echo $data['filename']; ?>
-	<?php echo $data['console']; ?>
-	<?php echo $data['price']; ?>
-</div>
-<?php } ?>
 <?php mysqli_close($conn); ?>

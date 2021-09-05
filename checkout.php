@@ -9,60 +9,13 @@
 	<link rel="stylesheet" href="css/checkout.css">
 	<!--owl carousel-->
 	<!--end carousle style-->
-	<title>Dalgames &reg;</title>
+	<title>checkout</title>
 </head>
 
 <body>
 
-	<!--header navbar-->
-	<div class="top-header">
-		<!--left side-->
-		<div class="left">
-			10% Discount On Payment With Cryptocurrency
-		</div>
-		<!--right side-->
-		<div class="right">
-			<!--currency-->
-			<div class="currency">
-				Currency
-				<div class="dropdown">
-					<p>USD</p>
-					<p>EURO</p>
-				</div>
-			</div>
-			<!--language-->
-			<div class="language">
-				Language
-				<div class="dropdown">
-					<p>English</p>
-					<p>French</p>
-				</div>
-			</div>
-			<!-- 
-			cta button login/join--
-			<div class="cta">
-				<p></p>
-				<p><a href="#">Signin/Join</a></p>
-			</div>
-		-->
-			<!--discount-->
-			<div class="discount">
-				10% Discount On Payment With Cryptocurrency
-			</div>
-		</div>
-		<!--/right side-->
-	</div>
-	<!--/header navbar-->
-
 	<!---menu-->
 	<div class="menu">
-		<!--menu 
-		<div class="hamburger" id="menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	-->
 		<div class="title">
 			Dalgames<sup>&reg;</sup>
 		</div>
@@ -80,15 +33,12 @@
 			<p>HELPING YOU FIND THE YOUR NEXT GAME</p>
 			<!--cta to buy-->
 			<button>
-				<a href="index.php">Home</a>
+				<a href="index.php">Go Back Home</a>
 			</button>
 		</div>
 
-
-
 	</div>
 	<!--/hero scetion-->
-
 
 	<main>
 		<!--shooping cart / checkout-->
@@ -105,28 +55,9 @@
 							<label>Firstname<sup>*</sup></label>
 							<input type="text" name="fname" class="field" required>
 						</div>
-
 						<div class="field">
 							<label>Lastname<sup>*</sup></label>
 							<input type="text" name="lname" class="field" required>
-						</div>
-
-						<div class="field">
-							<label>Company(Optional):</label>
-							<input type="text" name="company" class="field">
-						</div>
-
-						<div class="field">
-							<label>Country<sup>*</sup></label>
-							<input type="text" name="country" class="field" required>
-						</div>
-						<div class="field">
-							<label>State/Region<sup>*</sup></label>
-							<input type="text" name="stat" class="field" required>
-						</div>
-						<div class="field">
-							<label>Zip Code<sup>*</sup></label>
-							<input type="text" name="zip" class="field" required>
 						</div>
 						<div class="field">
 							<label>Phone Number<sup>*</sup></label>
@@ -137,12 +68,14 @@
 							<input type="email" name="email" class="field" required>
 						</div>
 						<div class="field">
-							<label>Notes for order (Optional)</label>
-							<input type="text" name="note" class="field">
+							<label>State/Region<sup>*</sup></label>
+							<input type="text" name="stat" class="field" required>
 						</div>
-						<!--Submit button--
-						<input type="submit" value="submit" class="submit-btn" name="submit">
-						--/submit button-->
+						<div class="field">
+							<label>Zip Code<sup>*</sup></label>
+							<input type="text" name="zip" class="field" required>
+						</div>
+
 					</fieldset>
 
 			</div>
@@ -150,7 +83,7 @@
 			<div class="payment">
 				<h1><u><span class="pay">Payment</span> Options</u></h1>
 				<div class="warning">
-					<p class="orderid">Order Id: </p>
+					<p class="orderid"></p>
 					<p>@&nbsp; Please Select your Prefered payment method and the account details will be sent to you by our
 						agent
 						via email and sms to complete the trasanction.</p>
@@ -187,6 +120,7 @@
 							<p>bitcoin(10% discount on all Cryptocurrency)</p>
 						</div>
 					</div>
+					<p class="orderid"></p>
 				</div>
 				<!--place order-->
 				<button type="submit" value="PLACE ORDER" id="order" name="submit">PLACE YOUR ORDER</button>
@@ -200,23 +134,22 @@
 
 	<!--FOOTER-->
 	<footer>
-
 		<!-- CONTACT-->
 		<div class="contact foot">
 			<!--phone-->
 			<div class="phone">
-				<p>Contact us : <a href="tel:+14844718107">(+1)484-4718-107</a></p>
+				<p>Telephone : <a href="">(+1)234-323-706</a></p>
 			</div>
 
 			<!--social links-->
 			<div class="social-media">
-				<p>Follow us on :</p>
+				<p>Follow us on our social media pages:</p>
 				<ul>
-					<li><a href="instagram.com/pallygames">
+					<li><a href="">
 							<img src="icons/ig.png" alt="instagram"></a></li>
-					<li><a href="https://www.facebook.com/pallygames/-107773448135655/">
+					<li><a href="">
 							<img src="icons/fb.png" alt="facebook"></a></li>
-					<li><a href="twitter.com/dalifard4">
+					<li><a href="">
 							<img src="icons/twi.png" alt="twitter"></a></li>
 				</ul>
 			</div>
@@ -232,18 +165,6 @@
 			</p>
 		</div>
 		<!--CREDITS-->
-
-
-		<!--PAYMENT METHODS PICS-->
-		<div class="pay-pics">
-			<img src="icons/pp.png" alt="paypal">
-			<img src="icons/ap.png" alt="applepay">
-			<img src="icons/bit.png" alt="bitcoin">
-			<img src="icons/gpay.png" alt="googleapp">
-			<img src="icons/cashapp.png" alt="cashapp">
-			<img src="icons/zelle.png" alt="zelle">
-		</div>
-		<!--/PAYMENT METHODS PICS-->
 
 	</footer>
 

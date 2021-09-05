@@ -16,7 +16,6 @@ main{
 }
 
 table{
-	//border: 1px solid  black;
 	cursor: pointer;
 }
 
@@ -38,7 +37,7 @@ th{
 	color: red;
 }
 #amt{
-	color: gold;
+	color: teal;
 	font-size: 1.3em;
 }
 
@@ -59,37 +58,9 @@ input{
 }
 
 u{
-	background: orange;
+	background: teal;
 	color: white;
 	border-radius: 10px;
 	padding: 0 5px;
 }
 
-
-		.notice{
-				border: 2px solid grey;
-				border-radius: 10px;
-				padding: 5px;
-				cursor: pointer;
-				text-transform: capitalize;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding: 10px 5px;
-				animation: flick .5s infinite;
-.red{
-	color: green;
-	font-weight: bolder;
-}
-			@keyframes flick {
-				0%{
-					border: 2px solid grey;
-				}
-				50%{
-						border: 2px solid green;
-				}
-				100%{
-					border: 2px solid teal;
-				}
-			}
-			}

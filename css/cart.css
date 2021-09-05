@@ -49,7 +49,7 @@ th {
 }
 
 #amt {
-  color: gold;
+  color: teal;
   font-size: 1.3em;
 }
 
@@ -71,57 +71,8 @@ input:hover {
 }
 
 u {
-  background: orange;
+  background: teal;
   color: white;
   border-radius: 10px;
   padding: 0 5px;
-}
-
-.notice {
-  border: 2px solid grey;
-  border-radius: 10px;
-  padding: 5px;
-  cursor: pointer;
-  text-transform: capitalize;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 5px;
-  -webkit-animation: flick .5s infinite;
-          animation: flick .5s infinite;
-}
-
-.notice .red {
-  color: green;
-  font-weight: bolder;
-}
-
-@-webkit-keyframes flick {
-  0% {
-    border: 2px solid grey;
-  }
-  50% {
-    border: 2px solid green;
-  }
-  100% {
-    border: 2px solid teal;
-  }
-}
-
-@keyframes flick {
-  0% {
-    border: 2px solid grey;
-  }
-  50% {
-    border: 2px solid green;
-  }
-  100% {
-    border: 2px solid teal;
-  }
 }

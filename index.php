@@ -1,5 +1,4 @@
 <?php
-
 include 'dbconn.php';
 ?>
 <!DOCTYPE html>
@@ -16,56 +15,8 @@ include 'dbconn.php';
 </head>
 
 <body>
-
-	<!--header navbar-->
-	<div class="top-header">
-		<!--left side-->
-		<div class="left">
-			10% Discount On Payment With Cryptocurrency
-		</div>
-		<!--right side-->
-		<div class="right">
-			<!--currency-->
-			<div class="currency">
-				Currency
-				<div class="dropdown">
-					<p>USD</p>
-					<p>EURO</p>
-				</div>
-			</div>
-			<!--language-->
-			<div class="language">
-				Language
-				<div class="dropdown">
-					<p>English</p>
-					<p>French</p>
-				</div>
-			</div>
-			<!-- 
-			cta button login/join--
-			<div class="cta">
-				<p></p>
-				<p><a href="#">Signin/Join</a></p>
-			</div>
-		-->
-			<!--discount-->
-			<div class="discount">
-				10% Discount On Payment With Cryptocurrency
-			</div>
-		</div>
-		<!--/right side-->
-	</div>
-	<!--/header navbar-->
-
 	<!---menu-->
 	<div class="menu">
-		<!--menu 
-		<div class="hamburger" id="menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	-->
 		<div class="title">
 			Dalgames<sup>&reg;</sup>
 		</div>
@@ -79,16 +30,16 @@ include 'dbconn.php';
 
 		<div class="hero-info">
 			<h1>WELCOME TO</h1>
-			<h2>Dalgames&reg; E-GAME SHOP</h2>
-			<p>HELPING YOU FIND THE YOUR NEXT GAME</p>
+			<h2>Dalgames&reg; ONLINE-GAME-RETAILER</h2>
+			<p>FIND THE YOUR NEXT GAME</p>
 			<!--cta to buy-->
 			<button>
-				<a href="#new">BUY NOW</a>
+				<a href="#new">SHOP</a>
 			</button>
 		</div>
 
 		<div class="hero-image">
-			<img src="icons/heroimg.png" alt="hero image">
+			<img src="bannerimgs/wall3.jpeg" alt="hero image">
 		</div>
 
 	</div>
@@ -98,16 +49,16 @@ include 'dbconn.php';
 	<!--product banners-->
 	<div class="banners">
 
-		<div class="banner b1" style="background-image: url('bannerimgs/mg.png');">
-			<h2><span class="banner-keyword">AMAZING GAMES </span>AT MIND BLOWING PRICES</h2>
+		<div class="banner b1" style="background-image: url('bannerimgs/wall0.jpg');">
+			<h2>THE<span class="banner-keyword"> BEST GAMES </span>AT MIND JAW DROPPING RATES</h2>
 		</div>
 
-		<div class="banner b2" style="background-image: url('bannerimgs/wall.png');">
-			<h2><span class="banner-keyword"> THE BEST </span> GAMES AT GIVEAWAY PRICES</h2>
+		<div class="banner b2" style="background-image: url('bannerimgs/wall.jpg');">
+			<h2><span class="banner-keyword"> YEARLY</span> GIVEAWAY AT OUR LOCAL SHOP</h2>
 		</div>
 
 		<div class="banner b3" style="background-image: url('bannerimgs/sale.jpg');">
-			<h2><span class="banner-keyword">10% DISCOUNT </span>ON ALL GAMES BOUGHT WITH BITCOIN</h2>
+			<h2><span class="banner-keyword">10% DISCOUNT </span> FOR THE SUMMER </h2>
 		</div>
 
 	</div>
@@ -116,7 +67,7 @@ include 'dbconn.php';
 
 	<!--PRODUCT SECTION navbar-->
 	<div class="products-navbar" id="new">
-		<h2><span class="active">NEW</span> PRODUCTS</h2>
+		<h2><span class="active">JUST</span> IN</h2>
 		<!--navbar-->
 		<div class="sub-product-navbar">
 			<ul>
@@ -166,7 +117,7 @@ include 'dbconn.php';
 						<input type="hidden" name="name" value="<?php echo $data['filename']; ?> " />
 					</p>
 					<!--console type-->
-					<div class="console">Console :
+					<div class="console">
 						<?php echo $data['console']; ?>
 					</div>
 					<!--price of the game-->
@@ -342,23 +293,22 @@ include 'dbconn.php';
 
 	<!--FOOTER-->
 	<footer>
-
 		<!-- CONTACT-->
 		<div class="contact foot">
 			<!--phone-->
 			<div class="phone">
-				<p>Contact us : <a href="tel:+14844718107">(+1)484-4718-107</a></p>
+				<p>Telephone : <a href="">(+1)234-323-706</a></p>
 			</div>
 
 			<!--social links-->
 			<div class="social-media">
-				<p>Follow us on :</p>
+				<p>Follow us on our social media pages:</p>
 				<ul>
-					<li><a href="instagram.com/pallygames">
+					<li><a href="">
 							<img src="icons/ig.png" alt="instagram"></a></li>
-					<li><a href="https://www.facebook.com/pallygames/-107773448135655/">
+					<li><a href="">
 							<img src="icons/fb.png" alt="facebook"></a></li>
-					<li><a href="twitter.com/dalifard4">
+					<li><a href="">
 							<img src="icons/twi.png" alt="twitter"></a></li>
 				</ul>
 			</div>
@@ -374,18 +324,6 @@ include 'dbconn.php';
 			</p>
 		</div>
 		<!--CREDITS-->
-
-
-		<!--PAYMENT METHODS PICS-->
-		<div class="pay-pics">
-			<img src="icons/pp.png" alt="paypal">
-			<img src="icons/ap.png" alt="applepay">
-			<img src="icons/bit.png" alt="bitcoin">
-			<img src="icons/gpay.png" alt="googleapp">
-			<img src="icons/cashapp.png" alt="cashapp">
-			<img src="icons/zelle.png" alt="zelle">
-		</div>
-		<!--/PAYMENT METHODS PICS-->
 
 	</footer>
 

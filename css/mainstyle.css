@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,91 +20,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.top-header {
-  background: var(--bg);
-  color: var(--color);
-  width: 100%;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.top-header .left {
-  display: none;
-  width: 100%;
-}
-
-.top-header .right {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 20px;
-}
-
-.top-header .currency, .top-header .language {
-  margin: 0 10px;
-  position: relative;
-  -webkit-transition: color .4s ease-in-out;
-  transition: color .4s ease-in-out;
-  cursor: pointer;
-}
-
-.top-header .currency .dropdown, .top-header .language .dropdown {
-  cursor: pointer;
-  position: absolute;
-  display: none;
-  background: var(--color);
-  color: black;
-}
-
-.top-header .currency .dropdown p, .top-header .language .dropdown p {
-  padding: 10px;
-  -webkit-transition: color .4s ease-in-out;
-  transition: color .4s ease-in-out;
-}
-
-.top-header .currency .dropdown p:hover, .top-header .language .dropdown p:hover {
-  color: var(--prm);
-}
-
-.top-header .currency .dropdown p:nth-child(1), .top-header .language .dropdown p:nth-child(1) {
-  border-bottom: 1px solid silver;
-}
-
-.top-header .currency:hover > .dropdown, .top-header .language:hover > .dropdown {
-  display: block;
-}
-
-.top-header .currency:hover, .top-header .language:hover {
-  color: var(--prm);
-}
-
-.top-header .discount {
-  cursor: pointer;
-  -webkit-transition: color .4s ease-in-out;
-  transition: color .4s ease-in-out;
-  margin-right: 10px;
-  width: 240px;
-  text-align: center;
-}
-
-.top-header .discount:hover {
-  color: var(--prm);
-}
-
 .menu {
   width: 100%;
   display: -webkit-box;
@@ -120,8 +36,10 @@ body {
 }
 
 .menu .title {
-  font-size: 2em;
+  font-size: 4em;
+  font-family: 'Lobster',cursive;
   margin: 20px 0;
+  text-shadow: -2px 3px 3px white,-1px -1px 3px wheat;
 }
 
 .hero {
@@ -186,6 +104,7 @@ body {
 
 .hero .hero-info button a {
   text-decoration: none;
+  color: teal;
   -webkit-transition: color .4s ease-in-out;
   transition: color .4s ease-in-out;
 }
@@ -197,6 +116,15 @@ body {
 .hero .hero-image {
   display: none;
   width: 100%;
+}
+
+.hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 0 50% 0;
+  opacity: 0.8;
+  -webkit-box-shadow: 2px 2px 8px white;
+          box-shadow: 2px 2px 8px white;
 }
 
 .banners {
@@ -235,7 +163,7 @@ body {
   width: 100%;
   height: 100%;
   background: black;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .banners .b2 h2 {
@@ -467,7 +395,9 @@ h2 {
 .featured-games .product .cart-button .tocart {
   font-size: 1em;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px  10px 0 0;
+  -webkit-box-shadow: 2px 2px 8px teal, -1px -1px 8px #cecbc8;
+          box-shadow: 2px 2px 8px teal, -1px -1px 8px #cecbc8;
 }
 
 .featured-games .product .cart-button img {
@@ -478,7 +408,6 @@ h2 {
   width: 100%;
   height: 215px;
   margin: 30px 0;
-  border: 2px solid red;
 }
 
 .top-rated-games .product .tester {
@@ -493,17 +422,18 @@ h2 {
 
 .top-rated-games .product .tester .image-card {
   width: 100%;
-  height: 210px;
+  height: 213px;
 }
 
 .top-rated-games .product .tester .image-card img {
   width: 100%;
   height: 100%;
+  border-radius: 0 0 0 0;
 }
 
 .top-rated-games .product .tester .wrapper {
   width: 100%;
-  height: 210px;
+  height: 213px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +458,7 @@ h2 {
   text-align: right;
   color: var(--color);
   background: #242323;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-right: 10px;
   text-transform: capitalize;
 }
@@ -537,7 +467,7 @@ h2 {
   text-align: center;
   background: var(--prm);
   color: var(--color);
-  padding: 5px;
+  padding: 10px 5px;
   font-size: 1.3em;
   font-weight: bold;
   border-bottom: 1px solid grey;
@@ -554,8 +484,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2em;
-  font-weight: bolder;
+  font-size: 1em;
 }
 
 .top-rated-games .product .tester .wrapper .rating img {
@@ -577,13 +506,17 @@ h2 {
   background: var(--prm);
   color: var(--color);
   padding: 10px 0;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 30px 30px 0;
 }
 
 .top-rated-games .product .tester .wrapper .cart-button .tocart {
+  color: teal;
   font-size: 1em;
   padding: 10px;
-  border-radius: 20px 0 20px 0;
+  font-weight: bolder;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 2px 8px grey,inset -1px -2px 8px black;
+          box-shadow: 1px 2px 8px grey,inset -1px -2px 8px black;
 }
 
 .top-rated-games .product .tester .wrapper .cart-button img {
@@ -703,6 +636,7 @@ footer .contact .social-media ul li a img {
 footer .credit {
   padding: 20px 0;
   font-size: 1em;
+  font-family: 'Lobster', cursive;
 }
 
 footer .credit .end-credit {

@@ -7,11 +7,10 @@ if(isset($_POST["submit"])){
 	}
 	
 	if($check){
-echo "<script>alert('YOUR ORDER HAS BEEN RECEIVED. AN EMAIL AND SMS WILL BE SENT TO YOU BY OUR AGENT TO COMPLETE YOUR PURCHASE')</script>";
 		header("Location:index.php");
 }else{
 echo "<script>
-alert('error uploading data');
+alert('an error ocuured please try again');
 </script>";
 }
 }

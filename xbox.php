@@ -1,7 +1,5 @@
 <?php
 include 'dbconn.php';
-include 'xboxscript.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,60 +11,12 @@ include 'xboxscript.php';
 	<link rel="stylesheet" href="css/mainstyle.css">
 	<!--owl carousel-->
 	<!--end carousle style-->
-	<title>Dalgames &reg;</title>
+	<title>Xbox Games</title>
 </head>
 
 <body>
-
-	<!--header navbar-->
-	<div class="top-header">
-		<!--left side-->
-		<div class="left">
-			10% Discount On Payment With Cryptocurrency
-		</div>
-		<!--right side-->
-		<div class="right">
-			<!--currency-->
-			<div class="currency">
-				Currency
-				<div class="dropdown">
-					<p>USD</p>
-					<p>EURO</p>
-				</div>
-			</div>
-			<!--language-->
-			<div class="language">
-				Language
-				<div class="dropdown">
-					<p>English</p>
-					<p>French</p>
-				</div>
-			</div>
-			<!-- 
-			cta button login/join--
-			<div class="cta">
-				<p></p>
-				<p><a href="#">Signin/Join</a></p>
-			</div>
-		-->
-			<!--discount-->
-			<div class="discount">
-				10% Discount On Payment With Cryptocurrency
-			</div>
-		</div>
-		<!--/right side-->
-	</div>
-	<!--/header navbar-->
-
 	<!---menu-->
 	<div class="menu">
-		<!--menu 
-		<div class="hamburger" id="menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	-->
 		<div class="title">
 			Dalgames<sup>&reg;</sup>
 		</div>
@@ -80,16 +30,16 @@ include 'xboxscript.php';
 
 		<div class="hero-info">
 			<h1>WELCOME TO</h1>
-			<h2>Dalgames&reg; E-GAME SHOP</h2>
-			<p>HELPING YOU FIND THE YOUR NEXT GAME</p>
+			<h2>Dalgames&reg; ONLINE-GAME-RETAILER</h2>
+			<p>FIND THE YOUR NEXT GAME</p>
 			<!--cta to buy-->
 			<button>
-				<a href="">BUY NOW</a>
+				<a href="">SHOP</a>
 			</button>
 		</div>
 
 		<div class="hero-image">
-			<img src="icons/heroimg.png" alt="hero image">
+			<img src="bannerimgs/wall3.jpeg" alt="hero image">
 		</div>
 
 	</div>
@@ -190,24 +140,24 @@ include 'xboxscript.php';
 
 
 	<!--FOOTER-->
+	<!--FOOTER-->
 	<footer>
-
 		<!-- CONTACT-->
 		<div class="contact foot">
 			<!--phone-->
 			<div class="phone">
-				<p>Contact us : <a href="tel:+4844718107">(+484)471-8107</a></p>
+				<p>Telephone : <a href="">(+1)234-323-706</a></p>
 			</div>
 
 			<!--social links-->
 			<div class="social-media">
-				<p>Follow us on :</p>
+				<p>Follow us on our social media pages:</p>
 				<ul>
-					<li><a href="instagram.com/pallygames">
+					<li><a href="">
 							<img src="icons/ig.png" alt="instagram"></a></li>
-					<li><a href="https://www.facebook.com/pallygames/-107773448135655/">
+					<li><a href="">
 							<img src="icons/fb.png" alt="facebook"></a></li>
-					<li><a href="twitter.com/dalifard4">
+					<li><a href="">
 							<img src="icons/twi.png" alt="twitter"></a></li>
 				</ul>
 			</div>
@@ -224,20 +174,7 @@ include 'xboxscript.php';
 		</div>
 		<!--CREDITS-->
 
-
-		<!--PAYMENT METHODS PICS-->
-		<div class="pay-pics">
-			<img src="icons/pp.png" alt="paypal">
-			<img src="icons/ap.png" alt="applepay">
-			<img src="icons/bit.png" alt="bitcoin">
-			<img src="icons/gpay.png" alt="googleapp">
-			<img src="icons/cashapp.png" alt="cashapp">
-			<img src="icons/zelle.png" alt="zelle">
-		</div>
-		<!--/PAYMENT METHODS PICS-->
-
 	</footer>
-
 	<!--initialiaztion of coarousels for all pages-->
 
 

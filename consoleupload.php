@@ -27,10 +27,6 @@
 			<label for="price">Price of Console:</label>
 			<input type="text" name="price" class="field" required><br><br>
 			<!--/price-->
-			<!--PRODUCT DEXSCRIPTION--
-			<label for="description">Add Description:</label>
-			<input type="text" name="description" class="field" required><br>
-			/PRODUCT DESCRIPTION-->
 			<!--Submit button-->
 			<input type="submit" value="submit" class="submit-btn" name="submit">
 			<!--/submit button-->
@@ -41,12 +37,9 @@
 
 </html>
 
-
 <!--PHP SCRIPT TO show IMAGES from DATABASE-->
-
 <?php
 include 'dbconn.php';
 include 'consolescript.php';
 ?>
-
 <?php mysqli_close($conn); ?>
